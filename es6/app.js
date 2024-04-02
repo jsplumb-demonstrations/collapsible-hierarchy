@@ -11,7 +11,7 @@ import {
     EVENT_CANVAS_CLICK
 } from "@jsplumbtoolkit/browser-ui";
 
-import tree from "../../italic"
+import tree from "../italic"
 
 import {ExpansionManager} from "./expansion-manager";
 import { LanguageDetailsView } from "./language-details";
