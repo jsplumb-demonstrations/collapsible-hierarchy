@@ -34,7 +34,7 @@ ready(() => {
         view:{
             nodes:{
                 default:{
-                    template:`<div data-link="{{link}}" data-family="{{family}}" data-extinct="{{extinct}}" data-collapsed="{{collapsed}}">                                    
+                    template:`<div class="jtk-language-node" data-link="{{link}}" data-family="{{family}}" data-extinct="{{extinct}}" data-collapsed="{{collapsed}}">                                    
                                     <r-if test="children != null">
                                         <span class="jtk-collapse">»</span>
                                     </r-if>
