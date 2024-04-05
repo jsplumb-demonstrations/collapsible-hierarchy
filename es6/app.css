@@ -1,8 +1,9 @@
 :root {
-    --color-extinct:#bf4b21;
-    --color-active:#0f650f;
-    --color-selected:#5c8080;
+    --color-extinct:#b17663;
+    --color-active:#2c742c;
+    --color-selected:#d52f37;
     --color-edge:gray;
+    --color-family:#d7d0d0;
 }
 
 body {
@@ -23,7 +24,6 @@ body {
 #ifDetails {
     flex:0 0 0;
     border: none;
-    box-shadow:0 0 10px gray;
 }
 
 #container[data-details='true'] #canvas {
@@ -32,19 +32,20 @@ body {
 
 #container[data-details='true'] #ifDetails {
     flex:0 0 35%;
+    border-left: 2px solid grey;
 }
 
-.jtk-node {
+.jtk-language-node {
     width:100px;
     height:40px;
-    padding:3px;
+    padding:5px;
     display:flex;
     align-items:center;
     justify-content:center;
     background-color:var(--color-active);
     color:white;
-    border-radius: 1px;
-    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    text-align: center;
 }
 
 [data-extinct='true'] {
@@ -53,14 +54,13 @@ body {
 
 [data-family='true'] {
     text-transform: uppercase;
-    background-color:white;
+    background-color:var(--color-family);
     color:black;
 }
 
 .jtk-selected-language  {
-    border: none;
-    outline: 4px dashed var(--color-selected);
-    outline-offset: 10px;
+    background-color: var(--color-selected);
+    color:white;
 }
 
 .jtk-collapse {
@@ -115,6 +115,6 @@ body {
 }
 
 #controls > div:hover {
-    background-color: var(--color-selected);
+    background-color: whitesmoke;
 }
 
