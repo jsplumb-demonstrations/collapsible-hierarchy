@@ -3,9 +3,10 @@
   "version": "6.17.0",
   "description": "",
   "scripts": {
-    "build-es6": "./node_modules/.bin/esbuild app.js --target=es2016 --bundle --format=iife --outfile=_build/bundle.js",
-    "transpile-es5": "./node_modules/.bin/babel _build/bundle.js -o _build/bundle-es5.js",
+    "build-es6": "./node_modules/.bin/esbuild app.js --target=es2016 --bundle --format=iife --outfile=bundle.js",
+    "transpile-es5": "./node_modules/.bin/babel bundle.js -o bundle-es5.js",
     "build": "npm run build-es6;npm run transpile-es5",
+    "dev": "./node_modules/.bin/esbuild app.js --target=es2016 --bundle --format=iife --outfile=bundle.js --watch",
     "serve": "./node_modules/.bin/http-server ."
   },
   "repository": {
