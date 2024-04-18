@@ -1,6 +1,6 @@
 {
     "name": "collapsible-hierarchy",
-    "version": "6.20.0",
+    "version": "6.22.0",
     "description": "",
     "scripts": {
         "build-es6": "./node_modules/.bin/esbuild app.js --target=es2016 --bundle --format=iife --outfile=bundle.js",
@@ -20,7 +20,7 @@
     },
     "homepage": "https://github.com/jsplumb-demonstrations/collapsible-hierarchy#readme",
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui": "^6.20.0"
+        "@jsplumbtoolkit/browser-ui": "^6.22.0"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
