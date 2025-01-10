@@ -4,9 +4,7 @@ import {
     HierarchyLayout,
     SegmentedConnector,
     AnchorLocations,
-    BlankEndpoint,
     consume,
-    EVENT_CLICK,
     EVENT_TAP,
     EVENT_CANVAS_CLICK
 } from "@jsplumbtoolkit/browser-ui";
@@ -45,8 +43,7 @@ ready(() => {
         },
         defaults:{
             connector:SegmentedConnector.type,
-            anchor:[AnchorLocations.Bottom, AnchorLocations.Top],
-            endpoint:BlankEndpoint.type
+            anchor:[AnchorLocations.Bottom, AnchorLocations.Top]
         },
         templateMacros:{
             label:(data) => data.label || data.id
