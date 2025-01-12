@@ -193,7 +193,7 @@ export default {
                                                                         },
                                                                         {
                                                                             id:"it-34",
-                                                                            label:"Spanish",
+                                                                            label:"Castilian",
                                                                             link:"https://en.wikipedia.org/wiki/Spanish_language"
                                                                         }
                                                                     ]
