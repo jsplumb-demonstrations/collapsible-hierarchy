@@ -2,7 +2,6 @@ import {
     newInstance,
     ready,
     HierarchyLayout,
-    SegmentedConnector,
     AnchorLocations,
     consume,
     EVENT_TAP,
@@ -42,7 +41,6 @@ ready(() => {
             }
         },
         defaults:{
-            connector:SegmentedConnector.type,
             anchor:[AnchorLocations.Bottom, AnchorLocations.Top]
         },
         templateMacros:{
